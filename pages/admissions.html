@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions - PIEC</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <img src="../assets/images/logo.png" alt="College Logo" class="logo">
+            <h1>Proteckhy Institute of Engineering College</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="admission-info">
+            <h2>Admission Form</h2>
+            <p>Please fill out the form below to apply for admission to Proteckhy Institute of Engineering College.</p>
+
+            <form action="/submit-admission" method="POST" class="admission-form">
+                <!-- Personal Details -->
+                <fieldset>
+                    <legend>Personal Details</legend>
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <label for="nationality">Nationality:</label>
+                    <input type="text" id="nationality" name="nationality" required>
+                </fieldset>
+
+                <!-- Contact Details -->
+                <fieldset>
+                    <legend>Contact Details</legend>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="address">Permanent Address:</label>
+                    <textarea id="address" name="address" rows="4" required></textarea>
+                </fieldset>
+
+                <!-- Academic Details -->
+                <fieldset>
+                    <legend>Academic Details</legend>
+                    <label for="course">Course Applying For:</label>
+                    <select id="course" name="course" required>
+                        <option value="">Select Course</option>
+                        <option value="bachelor">Bachelor of Fine Arts</option>
+                        <option value="bachelor">Bachelor of Commerce</option>
+                        <option value="masters">Master of Science</option>
+                        <option value="engineering">Bachelors in Engineering</option>
+                    </select>
+
+                    <label for="previousQualification">Previous Qualification:</label>
+                    <input type="text" id="previousQualification" name="previousQualification" required>
+
+                    <label for="percentage">Percentage/CGPA (Last Exam):</label>
+                    <input type="number" id="percentage" name="percentage" step="0.01" required>
+                </fieldset>
+
+                <!-- Upload Documents -->
+                <fieldset>
+                    <legend>Upload Documents</legend>
+                    <label for="idProof">Upload ID Proof:</label>
+                    <input type="file" id="idProof" name="idProof" accept=".jpg,.jpeg,.png,.pdf" required>
+
+                    <label for="marksheet">Upload Marksheets:</label>
+                    <input type="file" id="marksheet" name="marksheet" accept=".jpg,.jpeg,.png,.pdf" required>
+                </fieldset>
+
+                <!-- Submit Button -->
+                <button type="submit">Submit Application</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Proteckhy Institute of Engineering College. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
