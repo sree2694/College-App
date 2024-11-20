@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const galleryContainer = document.getElementById('gallery-container');
-    const images = ['image1.jpg', 'image2.jpg', 'image3.jpg'];
+    const images = ['image1.jpg', 'image2.jpg', 'image3.jpg','image4.jpg'];
     
     images.forEach(img => {
         const imgElem = document.createElement('img');
